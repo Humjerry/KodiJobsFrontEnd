@@ -26,18 +26,6 @@ export function App() {
       <Router>
   
         <Routes>
-          <Route path="/" element={<Signup />} errorElement={<Signup />} />
-          <Route path="/blog/:blogId" element={<BlogDetail />} errorElement={<BlogDetail />} />
-          <Route
-            path="/login"
-            element={<Loginpage />}
-            errorElement={<Loginpage />}
-          />
-          <Route
-            path="/job/:id"
-            element={<Applypage jobs={jobData} />}
-            errorElement={<Homepage />}
-          />
           <Route
             path="/Homepage"
             element={<Homepage />}
