@@ -26,7 +26,6 @@ export function App() {
       <Router>
         <Routes>
           <Route
-
             path="/blog/:blogId"
             element={<BlogDetail />}
             errorElement={<BlogDetail />}
@@ -38,11 +37,7 @@ export function App() {
             errorElement={<Homepage />}
           />
           <Route path="/" element={<Homepage />} errorElement={<Homepage />} />
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 414734e5f9bc88ef7d1cc6cb911aac6ae3ecb0fc
           <Route
             path="/FirstCard"
             element={<FirstCard />}
