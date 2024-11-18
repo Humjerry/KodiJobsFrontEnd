@@ -27,7 +27,7 @@ export function App() {
   
         <Routes>
           <Route
-            path="/Homepage"
+            path="/"
             element={<Homepage />}
             errorElement={<Homepage />}
           />
