@@ -9,7 +9,7 @@ function nav() {
       <h1>Kodi Jobs</h1>
       <ul>
         <strong>
-     <Link to="/Homepage"> <li>Home</li></Link> 
+     <Link to="/"> <li>Home</li></Link> 
         </strong>
 
         <Link to="/FirstCard"> <li>Jobs</li></Link> 
