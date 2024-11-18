@@ -1,6 +1,6 @@
 import React from "react";
 import Image1 from "../../images/Jerry.jpg";
-import Image2 from "../../images/Ksoft.jpg";
+import Image2 from "../../images/ksoft.jpg";
 import Image3 from "../../images/vicky.jpg";
 import Image4 from "../../images/emma ani.jpg";
 import Navbar from "./nav.jsx";
