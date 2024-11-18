@@ -26,7 +26,7 @@ export function App() {
       <Router>
         <Routes>
           <Route
-<<<<<<< HEAD
+
             path="/blog/:blogId"
             element={<BlogDetail />}
             errorElement={<BlogDetail />}
@@ -38,12 +38,12 @@ export function App() {
             errorElement={<Homepage />}
           />
           <Route path="/" element={<Homepage />} errorElement={<Homepage />} />
-=======
+
             path="/"
             element={<Homepage />}
             errorElement={<Homepage />}
           />
->>>>>>> 0825b29c50f160fb3284d6f49945e2f6cc8efe95
+
           <Route
             path="/FirstCard"
             element={<FirstCard />}
