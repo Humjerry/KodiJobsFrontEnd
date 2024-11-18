@@ -9,43 +9,38 @@ function nav() {
       <h1>Kodi Jobs</h1>
       <ul>
         <strong>
-<<<<<<< HEAD
           <Link to="/">
-            {" "}
             <li>Home</li>
           </Link>
-=======
-     <Link to="/"> <li>Home</li></Link> 
->>>>>>> 0825b29c50f160fb3284d6f49945e2f6cc8efe95
         </strong>
 
         <Link to="/FirstCard">
-          {" "}
+         
           <li>Jobs</li>
         </Link>
 
         <Link to="/SecondCard">
-          {" "}
+         
           <li>Categories</li>
         </Link>
         <Link to="/Contactform">
-          <li>Contact Us</li>{" "}
+          <li>Contact Us</li>
         </Link>
 
         <Link to="/TestimonialCrad">
-          {" "}
-          <li>Testimonials</li>{" "}
+          
+          <li>Testimonials</li>
         </Link>
         <Link to="/Aboutus">
-          {" "}
-          <li>About Us</li>{" "}
+          
+          <li>About Us</li>
         </Link>
       </ul>
       <div className="postbtn">
         <FaUserAlt />
         <h4>Welcome</h4>
         <button>
-          Post a job{" "}
+          Post a job
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
