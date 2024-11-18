@@ -24,25 +24,19 @@ export function App() {
       {/* <SearchContext.Provider value={{ search, setSearch }}> */}
 
       <Router>
-  
         <Routes>
-          <Route path="/" element={<Signup />} errorElement={<Signup />} />
-          <Route path="/blog/:blogId" element={<BlogDetail />} errorElement={<BlogDetail />} />
           <Route
-            path="/login"
-            element={<Loginpage />}
-            errorElement={<Loginpage />}
+            path="/blog/:blogId"
+            element={<BlogDetail />}
+            errorElement={<BlogDetail />}
           />
+
           <Route
             path="/job/:id"
             element={<Applypage jobs={jobData} />}
             errorElement={<Homepage />}
           />
-          <Route
-            path="/Homepage"
-            element={<Homepage />}
-            errorElement={<Homepage />}
-          />
+          <Route path="/" element={<Homepage />} errorElement={<Homepage />} />
           <Route
             path="/FirstCard"
             element={<FirstCard />}
