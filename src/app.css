@@ -202,6 +202,7 @@ article {
   justify-content: space-around;
   overflow: hidden;
   overflow-x: scroll;
+  flex-wrap: wrap;
 }
 .card1 {
   display: flex;
@@ -277,7 +278,7 @@ article {
   text-align: left;
 }
 .secondcard {
-  /* padding: 1rem 2rem; */
+  flex-wrap: wrap;
   height: 50vh;
 color: #000000;
   background-color: #f8f8f8;
@@ -664,6 +665,13 @@ color: #000000;
   line-height: 30px;
   text-align: center;
 }
+/* @keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.companilogos {
+  animation: slide 10s infinite;
+} */
 .nav {
   cursor: pointer;
   top: 0;
@@ -840,22 +848,91 @@ body {
 .formup {
   margin: 6rem auto !important;
 }
-@media (max-width:1120px) {
+@media (max-width:1013px) {
   .nav{
     margin-bottom: 3rem;
   }
-  .herotext {
-    display: none;
+  .contactform{
+    width: 80%;
+  }
+}
+@media (max-width:783px) {
+  .nav{
+    margin-bottom: 3rem;
+  }
+  .contactform{
+    width: 80%;
+  }
+  .blog-item{
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .cardContainer{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .herotext h1{
+    font-family: 'Martel', sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
   .hero p{
-    font-size: 25px;
-    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 2rem;
-    margin-bottom: 2rem;
     text-align: center;
   }
-  .heroOffice{
-    
-    height: 10rem;
+}
+@media (max-width:636px) {
+  .nav{
+    margin-bottom: 3rem;
   }
+  .contactform{
+    width: 80%;
+  }
+  .blog-item{
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .cardContainer{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .herotext h1{
+    font-family: 'Martel', sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .card1{
+    width: 80%;
+  }
+  .hero p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .clienth1 {
+    font-family: "Martel", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+}
+.firstname, .lastname, .email, .location{
+  width: 40%;
+    height: 40px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    background: #f8f8f8;
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    padding: 1rem;
+    font-weight: 400;
+}
 }
