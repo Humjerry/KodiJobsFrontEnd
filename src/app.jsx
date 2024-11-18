@@ -39,10 +39,6 @@ export function App() {
           />
           <Route path="/" element={<Homepage />} errorElement={<Homepage />} />
 
-            path="/"
-            element={<Homepage />}
-            errorElement={<Homepage />}
-          />
 
           <Route
             path="/FirstCard"
