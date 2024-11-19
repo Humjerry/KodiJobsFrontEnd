@@ -1,29 +1,35 @@
 import React from "react";
 import Arrowa from "../../images/Group.png";
 import telegram from "../../images/Group.svg";
+import BulbImg from "../../images/bulb.png";
 import { Link } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import Hamburger from "../components/Hamburger";
+
 function nav() {
+  const [show, setShow] = React.useState(false);
   return (
     <div className="nav">
-      <h1>Kodi Jobs</h1>
-      <ul>
+      <h1>
+        <figure>
+          {" "}
+          <img src={BulbImg} alt="logo" className="logo" />
+        </figure>
+        Kodi Jobs
+      </h1>
+      <ul className="ul">
         <strong>
-     <Link to="/"> <li>Home</li></Link> 
-
           <Link to="/">
             <li>Home</li>
           </Link>
-
         </strong>
 
         <Link to="/FirstCard">
-         
           <li>Jobs</li>
         </Link>
 
         <Link to="/SecondCard">
-         
           <li>Categories</li>
         </Link>
         <Link to="/Contactform">
@@ -31,11 +37,9 @@ function nav() {
         </Link>
 
         <Link to="/TestimonialCrad">
-          
           <li>Testimonials</li>
         </Link>
         <Link to="/Aboutus">
-          
           <li>About Us</li>
         </Link>
       </ul>
@@ -56,6 +60,8 @@ function nav() {
           </svg>
         </button>
       </div>
+
+      <Hamburger />
     </div>
   );
 }

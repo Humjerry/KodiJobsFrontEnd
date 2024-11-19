@@ -10,8 +10,8 @@
 main {
   background-color: #f8f8f8;
 }
-.herotext h1{
-  font-family: 'Martel', sans-serif;
+.herotext h1 {
+  font-family: "Martel", sans-serif;
   font-size: 5rem;
 }
 .card2h1 {
@@ -194,8 +194,8 @@ article {
   flex-direction: row;
   align-items: center;
 }
-.clientsflex::-webkit-scrollbar{
-  display:none;
+.clientsflex::-webkit-scrollbar {
+  display: none;
 }
 .clientsflex {
   display: flex;
@@ -280,7 +280,7 @@ article {
 .secondcard {
   flex-wrap: wrap;
   height: 50vh;
-color: #000000;
+  color: #000000;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-around;
@@ -410,6 +410,7 @@ color: #000000;
   padding: 0.4rem 1rem;
   border-radius: 0.3rem;
   border: none;
+  cursor: pointer;
 }
 
 .btncard p {
@@ -440,7 +441,10 @@ color: #000000;
   display: flex;
   gap: 1.5rem;
 }
-
+.logo {
+  width: 40px;
+  height: 40px;
+}
 .postbtn {
   display: flex;
   align-items: center;
@@ -486,6 +490,8 @@ color: #000000;
   font-size: 24px;
   font-weight: 700;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 .heroOffice {
   width: 665px;
@@ -673,6 +679,7 @@ color: #000000;
   animation: slide 10s infinite;
 } */
 .nav {
+  position: relative;
   cursor: pointer;
   top: 0;
   width: 100%;
@@ -683,10 +690,10 @@ color: #000000;
   align-items: center;
   justify-content: space-around;
 }
-.nav ul li {
+.nav .ul li {
   color: #000000;
 }
-ul {
+.ul {
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -848,36 +855,43 @@ body {
 .formup {
   margin: 6rem auto !important;
 }
-@media (max-width:1013px) {
-  .nav{
-    margin-bottom: 3rem;
+@media (max-width: 961px) {
+  .nav .ul {
+    display: none;
   }
-  .contactform{
+  .nav {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  .postbtn {
+    display: none;
+  }
+}
+@media (max-width: 1013px) {
+  .contactform {
     width: 80%;
   }
 }
-@media (max-width:783px) {
-  .nav{
-    margin-bottom: 3rem;
-  }
-  .contactform{
+@media (max-width: 783px) {
+  .contactform {
     width: 80%;
   }
-  .blog-item{
+  .blog-item {
     width: 80%;
     margin: 0 auto;
     gap: 1rem;
   }
-  .cardContainer{
+  .cardContainer {
     width: 80%;
     margin: 0 auto;
   }
-  .herotext h1{
-    font-family: 'Martel', sans-serif;
+  .herotext h1 {
+    font-family: "Martel", sans-serif;
     font-size: 3rem;
     line-height: 3.5rem;
   }
-  .hero p{
+  .hero p {
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
     font-weight: 500;
@@ -885,31 +899,35 @@ body {
     text-align: center;
   }
 }
-@media (max-width:636px) {
-  .nav{
-    margin-bottom: 3rem;
+@media (max-width: 636px) {
+  .navclick {
+    display: block;
   }
-  .contactform{
+  .Moniepoint,
+  .Itskills {
+    display: none;
+  }
+  .contactform {
     width: 80%;
   }
-  .blog-item{
+  .blog-item {
     width: 80%;
     margin: 0 auto;
     gap: 1rem;
   }
-  .cardContainer{
+  .cardContainer {
     width: 80%;
     margin: 0 auto;
   }
-  .herotext h1{
-    font-family: 'Martel', sans-serif;
+  .herotext h1 {
+    font-family: "Martel", sans-serif;
     font-size: 3rem;
     line-height: 3.5rem;
   }
-  .card1{
+  .card1 {
     width: 80%;
   }
-  .hero p{
+  .hero p {
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
     font-weight: 500;
@@ -922,9 +940,12 @@ body {
     font-weight: 700;
     text-align: center;
     margin-top: 2rem;
-}
-.firstname, .lastname, .email, .location{
-  width: 40%;
+  }
+  .firstname,
+  .lastname,
+  .email,
+  .location {
+    width: 40%;
     height: 40px;
     border-radius: 9px;
     outline: none;
@@ -934,5 +955,119 @@ body {
     font-size: 14px;
     padding: 1rem;
     font-weight: 400;
+  }
 }
+
+@media (max-width: 378px) {
+  .nav h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin-left: 0px;
+    font-weight: 700;
+    text-align: left !important;
+  }
+  .postbtn {
+    display: none;
+  }
+  .ul,
+  h4 {
+    display: none;
+  }
+
+  .contactform {
+    width: 80%;
+  }
+  .formh2 {
+    margin-top: 32rem;
+    font-family: "Martel", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .card2h1 {
+    font-family: "Martel", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .clienth1 {
+    font-family: "Martel", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .secondcard div {
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .secondcard {
+    flex-wrap: wrap;
+    color: #000000;
+    background-color: #f8f8f8;
+    gap: 1rem;
+    align-items: center;
+  }
+  .firstname,
+  .lastname,
+  .email,
+  .location {
+    width: 40%;
+    height: 40px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    background: #f8f8f8;
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    padding: 1rem;
+    font-weight: 400;
+  }
+  .heroOffice {
+    width: 290px;
+    height: 130px;
+  }
+  .heroimg1,
+  .heroimg2 {
+    width: 60px;
+    height: 40px;
+  }
+  .heroimg3 {
+    width: 60px;
+    height: 60px;
+  }
+  .h1 {
+    font-family: "Martel", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .inputDiv {
+    margin-top: 1rem;
+  }
+  .herotext h1 {
+    font-family: "Martel", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+  .hero p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .Moniepoint,
+  .Itskills {
+    display: none;
+  }
 }
