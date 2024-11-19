@@ -87,6 +87,7 @@ main {
   color: #333;
 }
 .footerdiv {
+  flex-wrap: wrap;
   width: 100%;
   background-color: black;
   color: #f8f8f8;

@@ -30,18 +30,26 @@ const SlidingMenu = () => {
           </button>
           <nav>
             <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
+              <Link to={"/"}>
+                {" "}
+                <li>Home</li>
+              </Link>
+              <Link to="/FirstCard">
+                {" "}
+                <li>Jobs</li>
+              </Link>
+              <Link to="/SecondCard">
+                {" "}
+                <li>Categories</li>
+              </Link>
+              <Link to="/Contactform">
+                {" "}
+                <li>Contact Us</li>
+              </Link>
+              <Link to="/TestimonialCrad">
+                {" "}
+                <li>Testimonials</li>
+              </Link>
             </ul>
           </nav>
         </div>
