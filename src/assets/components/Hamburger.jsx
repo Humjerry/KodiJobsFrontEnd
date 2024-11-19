@@ -32,22 +32,22 @@ const SlidingMenu = () => {
           <nav>
             <ul>
               <Link to={"/"}>
-                {" "}
+                
                 <li>Home</li>
               </Link>
-              <Link to="/FirstCard">
+              <Link to={"/FirstCard"}>
                 {" "}
                 <li>Jobs</li>
               </Link>
-              <Link to="/SecondCard">
+              <Link to={"/SecondCard"}>
                 {" "}
                 <li>Categories</li>
               </Link>
-              <Link to="/Contactform">
+              <Link to={"/Contactform"}>
                 {" "}
                 <li>Contact Us</li>
               </Link>
-              <Link to="/TestimonialCrad">
+              <Link to={"/TestimonialCrad"}>
                 {" "}
                 <li>Testimonials</li>
               </Link>
