@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../components/hamburgersty.css";
+import { Link } from "react-router-dom";
 
 const SlidingMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
